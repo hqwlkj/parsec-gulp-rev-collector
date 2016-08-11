@@ -1,0 +1,49 @@
+{
+  "name": "parsec-gulp-rev-collector",
+  "version": "1.0.0",
+  "description": "Static asset revision data collector from manifests, generated from different streams, and replace their links in html template.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hqwlkj/parsec-gulp-rev-collector"
+  },
+  "author": {
+    "name": "Yanghc ",
+    "email": "hqwlkj@outlook.com"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "rev",
+    "revision",
+    "version",
+    "versioning",
+    "static",
+    "asset",
+    "assets",
+    "collect",
+    "collector"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "through2": ">=0.5.1",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/hqwlkj/parsec-gulp-rev-collector/issues"
+  },
+  "homepage": "https://github.com/hqwlkj/parsec-gulp-rev-collector"
+}
