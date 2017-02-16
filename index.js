@@ -121,6 +121,9 @@ function revCollector(opts) {
             if (!file.isNull()) {
                 var src = file.contents.toString('utf8');
                 changes.forEach(function (r) {
+                    //Replace .css and .js in HTML with .min.css and .min.js
+                    src = src.replace(/css\/([\w\/]+)\.css/g, 'css/$1.min.css').replace(/js\/([\w\/]+)\.js/g, 'js/$1.min.js');
+                    //Add a version number to a file name that has been modified
                     src = src.replace(r.regexp, r.replacement);
                 });
                 file.contents = new Buffer(src);
